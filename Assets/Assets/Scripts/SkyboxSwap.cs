@@ -5,12 +5,12 @@ using UnityEngine;
 public class SkyboxSwap : MonoBehaviour
 {
 
-    public Material skybox1, skybox2, skybox3, skybox4, skybox5;
+    public Material initialSky, skybox1, skybox2, skybox3, skybox4, skybox5;
 
     // Use this for initialization
     void Start()
     {
-        RenderSettings.skybox = skybox1;
+        RenderSettings.skybox = initialSky;
     }
 
     void OnTriggerEnter(Collider other)
